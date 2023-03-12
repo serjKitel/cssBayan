@@ -80,7 +80,9 @@ body {
 }
 
 .last__block {
+    position: relative;
     padding: 0 0 1rem 0;
+    overflow: hidden;
 }
 
 .mem__title {
@@ -97,8 +99,11 @@ body {
 }
 
 .mem__img {
-    display: none;
+    width: 0;
+    height: 0;
+    transition: all 2s ease;
     margin-top: 1rem;
+  
 }
 
 .last__img {
@@ -110,7 +115,10 @@ body {
 }
 
 .mem__block:hover .mem__img {
-    display: block;
+    width: 47.5%;
+
+  height: auto;
+
 }
 
 .mem__input {
@@ -118,7 +126,9 @@ body {
 }
 
 .mem__input:checked ~ .mem__img {
-    display: block;
+    width: 47.5%;
+  height: auto;
+    
 }
 
 .mem__input:checked ~ .mem__title {
@@ -145,6 +155,18 @@ body {
     .mem__title {
         font-size: 1.4rem;
     }
+
+    .mem__block:hover .mem__img {
+        width: 90%;
+        height: auto;
+    }
+    
+   
+    .mem__input:checked ~ .mem__img {
+        width: 90%;
+      height: auto;
+        
+    }
 }
 
 @media (max-width: 666px) {
@@ -163,9 +185,24 @@ body {
         font-size: 0.9rem;
     }
 
-    .mem__responsive {
+    .mem__img {
+        width: 0;
+        height: 0;
+        transition: all 2s ease;
+        margin-top: 1rem;
+      
+    }
+
+    .mem__block:hover .mem__img {
         width: 100%;
         height: auto;
+    }
+    
+   
+    .mem__input:checked ~ .mem__img {
+        width: 100%;
+      height: auto;
+        
     }
 
     .container {
