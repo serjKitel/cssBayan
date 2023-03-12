@@ -80,6 +80,10 @@ body {
     margin-top: 1rem;
 }
 
+.last__block {
+    padding: 0 0 1rem 0;
+}
+
 
 
 .mem__title {
