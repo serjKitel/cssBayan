@@ -29,7 +29,7 @@ body {
 }
 
 .mem__input:checked + .mem__info .mem__title {
-    color: #000;
+    color: rgb(226, 41, 41);
   }
 
 .mem__info {
@@ -59,9 +59,17 @@ body {
     transform: translateY(0) rotate(45deg);
 }
 
+.mem__input:checked + .mem__info .cross > .line:nth-child(1) {
+    background-color: red;
+}
+
 .mem__block:hover .cross > .line:nth-child(2),
 .mem__input:checked + .mem__info .cross > .line:nth-child(2) {
     transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+.mem__input:checked + .mem__info .cross > .line:nth-child(2) {
+    background-color: red;
 }
 
 .content {
