@@ -62,9 +62,6 @@ body {
     transform: translateY(-0.5rem) rotate(-45deg);
 }
 
-
-
-
 .content {
     margin: 0 auto;
     max-width: 70%;
@@ -84,8 +81,6 @@ body {
     padding: 0 0 1rem 0;
 }
 
-
-
 .mem__title {
     display: block;
     cursor: pointer;
@@ -98,7 +93,6 @@ body {
 .title__task {
     margin: 0 auto;
 }
-
 
 .mem__img {
     display: none;
@@ -175,6 +169,4 @@ body {
     .container {
         max-width: 95%;
     }
-
-    
 }
