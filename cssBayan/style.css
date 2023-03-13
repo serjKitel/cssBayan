@@ -44,6 +44,7 @@ body {
     transition: 0.3s;
     background-color: #000;
     margin: 0.31rem auto;
+    opacity: 0;
 }
 
 .line:nth-child(1) {
@@ -52,6 +53,14 @@ body {
 
 .line:nth-child(2) {
     transform: translateY(-0.5rem) rotate(90deg);
+}
+
+.content:hover .cross > .line:nth-child(1) {
+    opacity: 1;
+}
+
+.content:hover .cross > .line:nth-child(2) {
+    opacity: 1;
 }
 
 .mem__block:hover .cross > .line:nth-child(1),
