@@ -22,20 +22,20 @@ body {
     text-align: center;
     cursor: pointer;
     border-top: 0.1rem solid black;
-  }
+}
 
 .container:hover .mem__title {
     color: #000;
 }
 
-.mem__input:checked + .mem__info .mem__title {
+.mem__input:checked+.mem__info .mem__title {
     color: rgb(226, 41, 41);
-  }
+}
 
 .mem__info {
     display: flex;
     justify-content: space-between;
-}  
+}
 
 .line {
     display: block;
@@ -55,29 +55,29 @@ body {
     transform: translateY(-0.5rem) rotate(90deg);
 }
 
-.content:hover .cross > .line:nth-child(1) {
+.content:hover .cross>.line:nth-child(1) {
     opacity: 1;
 }
 
-.content:hover .cross > .line:nth-child(2) {
+.content:hover .cross>.line:nth-child(2) {
     opacity: 1;
 }
 
-.mem__block:hover .cross > .line:nth-child(1),
-.mem__input:checked + .mem__info .cross > .line:nth-child(1) {
+.mem__block:hover .cross>.line:nth-child(1),
+.mem__input:checked+.mem__info .cross>.line:nth-child(1) {
     transform: translateY(0) rotate(45deg);
 }
 
-.mem__input:checked + .mem__info .cross > .line:nth-child(1) {
+.mem__input:checked+.mem__info .cross>.line:nth-child(1) {
     background-color: red;
 }
 
-.mem__block:hover .cross > .line:nth-child(2),
-.mem__input:checked + .mem__info .cross > .line:nth-child(2) {
+.mem__block:hover .cross>.line:nth-child(2),
+.mem__input:checked+.mem__info .cross>.line:nth-child(2) {
     transform: translateY(-0.5rem) rotate(-45deg);
 }
 
-.mem__input:checked + .mem__info .cross > .line:nth-child(2) {
+.mem__input:checked+.mem__info .cross>.line:nth-child(2) {
     background-color: red;
 }
 
@@ -89,8 +89,8 @@ body {
 
 .title {
     padding: 1rem 0;
-    font-size: 1.2rem; 
-  }
+    font-size: 1.2rem;
+}
 
 .mem__block {
     margin-top: 1rem;
@@ -120,7 +120,8 @@ body {
     height: 0;
     transition: all 2s ease;
     margin-top: 1rem;
-  
+    transition: width 2s ease;
+
 }
 
 .last__img {
@@ -133,22 +134,27 @@ body {
 
 .mem__block:hover .mem__img {
     width: 47.5%;
-
-  height: auto;
-
+    height: auto;
 }
+
+.mem__block:not(:hover) .mem__img {
+    width: 0%; 
+    height: auto;
+  }
+
+
 
 .mem__input {
     appearance: none;
 }
 
-.mem__input:checked ~ .mem__img {
+.mem__input:checked~.mem__img {
     width: 47.5%;
-  height: auto;
-    
+    height: auto;
+
 }
 
-.mem__input:checked ~ .mem__title {
+.mem__input:checked~.mem__title {
     color: #000;
 }
 
@@ -177,12 +183,12 @@ body {
         width: 90%;
         height: auto;
     }
-    
-   
-    .mem__input:checked ~ .mem__img {
+
+
+    .mem__input:checked~.mem__img {
         width: 90%;
-      height: auto;
-        
+        height: auto;
+
     }
 }
 
@@ -207,19 +213,19 @@ body {
         height: 0;
         transition: all 2s ease;
         margin-top: 1rem;
-      
+
     }
 
     .mem__block:hover .mem__img {
         width: 100%;
         height: auto;
     }
-    
-   
-    .mem__input:checked ~ .mem__img {
+
+
+    .mem__input:checked~.mem__img {
         width: 100%;
-      height: auto;
-        
+        height: auto;
+
     }
 
     .container {
