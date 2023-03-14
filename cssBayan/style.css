@@ -185,14 +185,38 @@ body {
         height: auto;
 
     }
+
+    .content {
+        cursor: default;
+    }
+    
+    .mem__block {
+        cursor: default;
+    }
 }
 
 @media (max-width: 666px) {
+
+    .title {
+        font-size: 0.75rem;
+    }
+
+    .mem__title {
+        font-size: 0.95rem;
+    }
 
     .mem__input:checked~.mem__img {
         width: 90%;
         height: auto;
 
+    }
+
+    .content {
+        cursor: default;
+    }
+    
+    .mem__block {
+        cursor: default;
     }
 }
 
@@ -203,6 +227,14 @@ body {
 
     .mem__title {
         font-size: 0.9rem;
+    }
+
+    .content {
+        cursor: default;
+    }
+    
+    .mem__block {
+        cursor: default;
     }
 
     .mem__img {
